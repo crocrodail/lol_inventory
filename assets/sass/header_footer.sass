@@ -1,0 +1,111 @@
+$gold: #C28F2D
+$redd: #D64944
+$darkredd: #a33430
+$darkgold: #90691e
+
+@font-face
+  font-family: 'D-DIN Regular'
+  font-style: normal
+  font-weight: normal
+  src: url('../font/D-DIN.woff') format('woff')
+
+
+html, body
+  width: 100%
+  margin: 0
+  padding: 0
+  overflow-x: hidden
+
+header
+  position: relative
+  background-color: #111111
+  height: 100px
+  color: $gold
+  display: flex
+  font-family: "Mark Pro Medium", sans-serif
+  text-transform: uppercase
+
+
+  .logoRG
+    width: 400px
+    height: 0px
+    display: flex
+    padding-top: 25px
+    margin-left: 5vw
+
+  #riotgame
+    padding: 0 0 0 0
+    width: 100px
+
+  #iconlol
+    width: 60px
+    height: 65px
+    padding: 0 0 0 30px
+    margin: -7px 0 0 0
+
+  svg
+    margin: 25px 0 0 0
+    width: 50px
+
+  .break
+    height: 47px
+    width: 3px
+    background-color: #3C3C3C
+    margin: 5px 0 0 0
+
+  .mainMenu
+    margin-top: 45px
+    width: 40vw
+    display: flex
+    overflow-x: hidden
+    margin-left: -100px
+    font-size: 0.8vw
+
+    a:not(:first-child)
+        margin-left: 4vw
+
+  .button
+    position:  absolute
+    right: 5vw
+    top: 24px
+
+  #register
+    margin-left: 2vw
+
+  a
+    text-decoration: none
+    color: $gold
+
+    &:hover
+      color: $darkgold
+
+footer
+  height: 18vw
+  background-color: #010101
+
+  .contents
+    width: 50%
+    margin: auto
+    padding-top: 3vw
+    text-align: center
+
+    p
+      font-weight: bold
+      text-align: center
+      color: #585858
+      text-transform: uppercase
+      font-family: "Mark Pro Medium", sans-serif
+
+      &:first-child
+        font-size: 1vw
+
+      &:nth-child(2)
+        font-size: .8vw
+        margin-bottom: 3vw
+
+      &:nth-child(3)
+        font-size: .6vw
+        letter-spacing: .1vw
+
+      a
+        color: #D64944

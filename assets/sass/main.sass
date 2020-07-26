@@ -1,0 +1,509 @@
+$gold: #C28F2D
+$redd: #D64944
+$darkredd: #a33430
+$darkgold: #90691e
+
+@font-face
+  font-family: 'D-DIN Regular'
+  font-style: normal
+  font-weight: normal
+  src: url('../font/D-DIN.woff') format('woff')
+
+
+html, body
+  width: 100%
+  margin: 0
+  padding: 0
+  overflow-x: hidden
+
+.mainScreen
+  background-image: url('../images/bg.png')
+  background-size: cover
+  width: 100vw
+  height: 48vw
+  position: relative
+
+  .breaklolStyle
+    position: absolute
+    background-image: url('../images/breakmainscreen.svg')
+    background-size: cover
+    width: 20vw
+    height: 1.34vw
+    right: 15vw
+    bottom: 18vw
+
+  img
+    position: absolute
+    right: 10vw
+    bottom: 20vw
+    width: 30vw
+
+  h1
+    position: absolute
+    color: white
+    font-family: "Mark Pro Medium", sans-serif
+    right: 13vw
+    bottom: 13vw
+    font-size: 2vw
+    text-transform: uppercase
+
+
+  .btn
+    position: absolute
+    right: 5.8vw
+    bottom: 3vw
+
+    .content
+      position: relative
+      width: 30vw
+      height: 10vw
+
+    #decouvrir
+      position: absolute
+      padding: 1.2vw 6vw
+      font-size: 1vw
+      left: 6.4%
+      top: 14%
+
+    .cadre
+      position: absolute
+      background-image: url('../images/cadreBtn.svg')
+      background-size: cover
+      width: 22.15vw
+      height: 6vw
+
+    .onbtnleft
+      position: absolute
+      background-image: url('../images/onBtn.svg')
+      background-size: cover
+      width: 1.7vw
+      height: 1.3vw
+      top: 27%
+      left: 3%
+
+    .onbtnright
+      position: absolute
+      background-image: url('../images/onBtn.svg')
+      background-size: cover
+      width: 1.7vw
+      height: 1.3vw
+      top: 27%
+      left: 65%
+
+.about
+  height: 50vw
+  width: 100vw
+
+  .content
+    position: relative
+    border: 1px solid $gold
+    height: 89%
+    margin: 5%
+
+  #garen
+    position: absolute
+    bottom: 0
+    right: 0
+    width: 60vw
+
+  #circleG
+    position: absolute
+    bottom: 0
+    right: 0
+    width: 47vw
+
+  .left
+    h1
+      font-family: "BeaufortforLOL-Bold"
+      text-transform: uppercase
+      margin: 0 0 0 7%
+      font-size: 4vw
+
+    h2
+      font-family: "D-DIN Regular"
+      font-size: 2vw
+      font-weight: normal
+      margin: 5% 0 0 7.7%
+      text-transform: uppercase
+
+    #registerr
+      position: relative
+      padding: 0.8vw 6vw 0.6vw 3vw
+      font-size: 0.9vw
+      margin-left: 8%
+      margin-top: 2%
+
+      &::before
+        position: absolute
+        content: ''
+        background-image: url('../images/btnspe.svg')
+        background-size: cover
+        background-repeat: no-repeat
+        width: 15vw
+        height: 3.26vw
+        left: -3%
+        top: -12.5%
+
+  .right
+    h1
+      position: absolute
+      font-family: "BeaufortforLOL-Bold"
+      text-transform: uppercase
+      font-size: 4vw
+      font-weight: bold
+      font-style: italic
+      right: 10%
+      bottom: 20%
+      color: white
+
+    h2
+      position: absolute
+      font-family: "D-DIN Regular"
+      font-size: 1.8vw
+      font-weight: normal
+      text-transform: uppercase
+      right: 10%
+      bottom: 32%
+      color: white
+
+
+  p
+    font-family: "D-DIN Regular"
+    white-space: pre
+    font-size: 1.3vw
+    margin: 5% 0 0 4%
+    line-height: 1.5
+
+  .break
+    position: absolute
+    background-image: url('../images/breakmainscreen.svg')
+    background-size: cover
+    width: 15vw
+    height: 1vw
+    left: 8.5%
+
+.exemple
+  position: relative
+  height: 52vw
+  background-color: #010101
+
+  .left
+
+    #inventaire
+      position: absolute
+      width: 40vw
+      left: 10%
+      top: 9%
+
+    #champion
+      position: absolute
+      width: 30vw
+      left: 25%
+      top: 3%
+
+    h1
+      position: absolute
+      font-family: "BeaufortforLOL-Bold"
+      text-transform: uppercase
+      font-size: 2vw
+      font-weight: bold
+      font-style: italic
+      left: 33%
+      bottom: 37%
+      color: white
+
+    h2
+      position: absolute
+      font-family: "D-DIN Regular"
+      font-size: 1vw
+      font-weight: normal
+      text-transform: uppercase
+      left: 26.5%
+      bottom: 43%
+      color: white
+      letter-spacing: .15vw
+
+    .btn
+      position: absolute
+      width: 17vw
+      display: flex
+      justify-content: space-between
+      top: 63%
+      left: 18.3%
+
+      button
+        font-size: 0.5vw
+        padding: 0.5vw 1.5vw
+
+    .crow
+      position: absolute
+      background-color: $gold
+      width: 42vw
+      height: .13vw
+      bottom: 7.3%
+      left: 8%
+
+    .roles
+      display: flex
+      width: 38vw
+      justify-content: space-around
+      padding: 41vw 0 0 10vw
+
+      .select
+        img
+          position: absolute
+          left: 29%
+          width: 2.2vw
+          top: -10%
+
+        &::before
+          position: absolute
+          content: ''
+          background-image: url('../images/selected.png')
+          background-size: cover
+          background-repeat: no-repeat
+          width: 4.8vw
+          height: 5.2vw
+          left: 2%
+          top: -43%
+
+        &::after
+          position: absolute
+          content: ''
+          background-image: url('../images/circleselected.png')
+          background-size: cover
+          background-repeat: no-repeat
+          width: 1vw
+          height: 1vw
+          left: 40%
+          top: 120%
+
+      .role
+        position: relative
+        width: 5vw
+        height: 5.5vw
+
+        &:hover
+          cursor: pointer
+
+      .assassins
+        img
+          position: absolute
+          left: 27%
+          width: 2.2vw
+          top: -15%
+
+
+      img
+        display: block
+        margin: auto
+        margin-bottom: 3vw
+        width: 2vw
+      .p
+        position: absolute
+        bottom: 0
+        color: $gold
+        font-family: "Mark Pro Medium", sans-serif
+        text-transform: uppercase
+        font-size: 0.5vw
+        margin: auto
+        text-align: center
+        left: 0
+        width: 5vw
+
+        &::before
+          position: absolute
+          content: ''
+          border-radius: 100%
+          background-color: $gold
+          width: 0.55vw
+          height: 0.6vw
+          left: 43%
+          top: 180%
+
+  .right
+
+    h1
+      position: absolute
+      font-family: "BeaufortforLOL-Bold"
+      text-transform: uppercase
+      font-size: 4.5vw
+      font-weight: bold
+      font-style: italic
+      right: 18%
+      top: 5%
+      color: white
+
+    h2
+      position: absolute
+      font-family: "D-DIN Regular"
+      font-size: 2vw
+      font-weight: normal
+      text-transform: uppercase
+      right: 25%
+      top: 5%
+      color: white
+      letter-spacing: .15vw
+
+    .break
+      position: absolute
+      background-image: url('../images/breakmainscreen.svg')
+      background-size: cover
+      width: 15vw
+      height: 1vw
+      right: 24%
+      top: 22%
+
+    p
+      position: absolute
+      font-family: "D-DIN Regular"
+      font-size: 1.5vw
+      right: 15%
+      top: 30%
+      color: white
+      width: 32vw
+      text-align: center
+      line-height: 1.5
+
+    #start
+      position: absolute
+      padding: 0.8vw 6vw 0.6vw 3vw
+      font-size: 0.9vw
+      right: 23%
+      top: 55%
+
+      &::before
+        position: absolute
+        content: ''
+        background-image: url('../images/btnspe.svg')
+        background-size: cover
+        background-repeat: no-repeat
+        width: 16vw
+        height: 3.49vw
+        left: -2%
+        top: -18%
+
+.lol
+  height: 52vw
+
+  .borderr
+    border: 1px solid $gold
+    height: 89%
+    margin: 5%
+
+  .content
+    background-image: url('../images/bglol.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    height: 92%
+    margin: 2%
+
+    h1
+      font-family: "BeaufortforLOL-Bold"
+      text-transform: uppercase
+      font-size: 4.5vw
+      font-weight: bold
+      font-style: italic
+      color: white
+      text-align: center
+      margin: 0
+
+    h2
+      font-family: "D-DIN Regular"
+      font-size: 2vw
+      font-weight: normal
+      text-transform: uppercase
+      color: white
+      letter-spacing: .15vw
+      text-align: center
+      margin: 0
+      padding-top: 3vw
+
+    .break
+      background-image: url('../images/breakmainscreen.svg')
+      background-size: cover
+      width: 15vw
+      height: 1vw
+      margin: auto
+      margin-top: 2vw
+
+    p
+      font-size: 1.5vw
+      color: white
+      width: 50vw
+      margin: auto
+      text-align: center
+      letter-spacing: .05vw
+      font-family: "D-DIN Regular"
+      margin-top: 5vw
+
+    .btn
+      margin: auto
+      width: 22vw
+      margin-top: 8vw
+
+      .contentbtn
+        position: relative
+        width: 30vw
+        height: 10vw
+
+      #decouvrir2
+        position: absolute
+        padding: 1.2vw 6vw
+        font-size: 1vw
+        left: 6.4%
+        top: 14%
+
+      .cadre
+        position: absolute
+        background-image: url('../images/cadreBtn.svg')
+        background-size: cover
+        width: 22.15vw
+        height: 6vw
+
+      .onbtnleft
+        position: absolute
+        background-image: url('../images/onBtn.svg')
+        background-size: cover
+        width: 1.7vw
+        height: 1.3vw
+        top: 27%
+        left: 3%
+
+      .onbtnright
+        position: absolute
+        background-image: url('../images/onBtn.svg')
+        background-size: cover
+        width: 1.7vw
+        height: 1.3vw
+        top: 27%
+        left: 65%
+
+.redLol
+  padding: 15px 2vw
+  border: none
+  background-color: $redd
+  color: white
+  font-size: 18px
+  text-transform: uppercase
+  font-family: "Mark Pro Medium", sans-serif
+  font-weight: bold
+
+  &:hover
+    cursor: pointer
+    background-color: $darkredd
+
+.goldLol
+  padding: 12px 2vw
+  border: 3px $gold solid
+  background-color: rgba(155, 176, 110, 0)
+  color: $gold
+  font-size: 18px
+  text-transform: uppercase
+  font-family: "Mark Pro Medium", sans-serif
+  font-weight: bold
+
+  &:hover
+    cursor: pointer
+    color: $darkgold
+    border: 3px $darkgold solid
