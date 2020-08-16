@@ -1,0 +1,154 @@
+$gold: #C28F2D
+$redd: #D64944
+$darkredd: #a33430
+$darkgold: #90691e
+
+@font-face
+  font-family: 'D-DIN Regular'
+  font-style: normal
+  font-weight: normal
+  src: url('../font/D-DIN.woff') format('woff')
+
+
+.main
+  position: relative
+  height: 48vw
+  background-color: #010101
+  display: flex
+
+  img
+    position: absolute
+    height: 30vw
+    right: 20%
+    top: 15%
+
+  .from
+    position: relative
+
+  h2
+    position: absolute
+    color: white
+    font-family: "D-DIN Regular"
+    top: 4%
+    left: 25%
+    font-size: 2vw
+    letter-spacing: .4vw
+
+  h1
+    position: absolute
+    color: white
+    font-family: "BeaufortforLOL-Bold"
+    top: 7%
+    left: 15%
+    font-size: 4vw
+    letter-spacing: .2vw
+    font-style: italic
+    text-transform: uppercase
+
+  form
+    position: absolute
+    width: 20vw
+    height: 30vw
+    top: 28%
+    left: 17.5%
+
+    svg
+      position: absolute
+      width: 3vw
+      margin-top: 0.7vw
+
+      &:nth-child(3)
+        margin-top: 1vw
+
+      &:nth-child(5)
+        margin-top: 0.6vw
+
+      &:nth-child(7)
+        margin-top: 1vw
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus
+    -webkit-box-shadow: 0 0 0 30vw #010101 inset !important
+    -webkit-text-fill-color: $gold !important
+
+
+
+  input:not(:last-child)
+    position: relative
+    all: unset
+    display: block
+    width: 85%
+    height: 8%
+    margin: auto
+    font-family: "Mark Pro Medium", sans-serif
+    color: $gold !important
+    border: $gold 1px solid
+    margin-bottom: 5%
+    padding-left: 15%
+    font-size: .7vw
+
+    &::placeholder
+      color: $gold !important
+      text-transform: uppercase
+
+  input:last-child
+    display: block
+    margin: 2vw auto 0 auto
+
+
+  textarea
+    all: unset
+    display: block
+    width: 85%
+    height: 30%
+    margin: auto
+    font-family: "Mark Pro Medium", sans-serif
+    color: $gold
+    border: $gold 1px solid
+    padding-left: 15%
+    padding-top: 5%
+    overflow: hidden
+    resize: none
+    font-size: .7vw
+
+
+    &::placeholder
+      color: $gold
+      text-transform: uppercase
+
+
+.redLol
+  padding: 15px 2vw
+  border: none
+  background-color: $redd
+  color: white
+  font-size: 18px
+  text-transform: uppercase
+  font-family: "Mark Pro Medium", sans-serif
+  font-weight: bold
+
+  &:hover
+    cursor: pointer
+    background-color: $darkredd
+
+.goldLol
+  padding: 12px 2vw
+  border: 3px $gold solid
+  background-color: rgba(155, 176, 110, 0)
+  color: $gold
+  font-size: 18px
+  text-transform: uppercase
+  font-family: "Mark Pro Medium", sans-serif
+  font-weight: bold
+
+  &:hover
+    cursor: pointer
+    color: $darkgold
+    border: 3px $darkgold solid
