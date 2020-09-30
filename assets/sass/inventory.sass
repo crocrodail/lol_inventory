@@ -1,0 +1,50 @@
+$gold: #C28F2D
+$redd: #D64944
+$darkredd: #a33430
+$darkgold: #90691e
+
+.redLol
+  padding: 15px 2vw
+  border: none
+  background-color: $redd
+  color: white
+  font-size: 18px
+  text-transform: uppercase
+  font-family: "Mark Pro Medium", sans-serif
+  font-weight: bold
+
+  &:hover
+    cursor: pointer
+    background-color: $darkredd
+
+#start
+  position: absolute
+  padding: 0.8vw 6vw 0.6vw 3vw
+  font-size: 0.9vw
+  right: 23%
+  top: 55%
+
+  &::before
+    position: absolute
+    content: ''
+    background-image: url('../images/btnspe.svg')
+    background-size: 160px 849px
+    width: auto
+    height: auto
+    left: -2%
+    top: -18%
+
+.goldLol
+  padding: 12px 2vw
+  border: 3px $gold solid
+  background-color: rgba(155, 176, 110, 0)
+  color: $gold
+  font-size: 18px
+  text-transform: uppercase
+  font-family: "Mark Pro Medium", sans-serif
+  font-weight: bold
+
+  &:hover
+    cursor: pointer
+    color: $darkgold
+    border: 3px $darkgold solid
