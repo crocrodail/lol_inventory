@@ -1,42 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventory League of Legends</title>
     <link href="//db.onlinewebfonts.com/c/a05747eaf46bae50f19dfa950b86befd?family=Mark+Pro+Medium" rel="stylesheet" type="text/css"/>
     <link href="//db.onlinewebfonts.com/c/12420e8c141ca7c3dff41de2d59df13e?family=BeaufortforLOL-Bold" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="/assets/css/main.min.css">
-    <link rel="stylesheet" href="/assets/css/header_footer.min.css">
-  </head>
-  <body>
+    <link rel="stylesheet" href="{{ asset('css/main.min.css') }}">
 
-    <header>
-      <div class="logoRG">
-        <a href="#"><img id="riotgame" src="assets/images/logoRG.png" alt="Riot Game logo"></a>
-        <svg xmlns="http://www.w3.org/2000/svg" width="10.682" height="8.535" viewBox="0 0 8.682 4.535">
-          <g id="noun_Arrow_2094736" transform="translate(-0.001 -75.02)">
-            <path id="Tracé_16" data-name="Tracé 16" d="M.079,8.658a.115.115,0,0,0,.068.023A.12.12,0,0,0,.23,8.645L4.472,4.514a.26.26,0,0,0,0-.34L.23.036A.112.112,0,0,0,.078.025.231.231,0,0,0,0,.21V8.475a.229.229,0,0,0,.079.183Z" transform="translate(8.683 75.02) rotate(90)" fill="#7e7e7e"/>
-          </g>
-        </svg>
-        <div class="break"></div>
-        <img id="iconlol" src="assets/images/iconLOL.png" alt="League of legends icon">
-      </div>
-      <div class="mainMenu">
-        <a href="./">Accueil</a>
-        <a href="./inventory.html">Inventaire</a>
-        <a href="./about.html">Qui sommes-nous ?</a>
-        <a href="./contact.html">Contact</a>
-      </div>
-      <div class="button">
-        <button type="button" class="goldLol" id="login">Connexion</button>
-        <button type="button" class="redLol" id="register">Inscription</button>
-      </div>
-    </header>
+    @include('layouts.header')
 
     <div class="mainScreen">
 
-      <img src="assets/images/logoLOL.png" alt="League of legends logo">
+      <img src="{{ asset('images/logoLOL.png') }}" alt="League of legends logo">
       <div class="breaklolStyle"></div>
       <h1>Roleplay inventory</h1>
       <div class="btn">
@@ -68,8 +42,8 @@
           <button type="button" id='registerr' class="redLol">S'inscrire</button>
         </div>
         <div class="right">
-          <img id="circleG" src="assets/images/circle.svg" alt="circle">
-          <img id="garen" src="assets/images/garen.png" alt="garen">
+          <img id="circleG" src="{{ asset('images/circle.svg') }}" alt="circle">
+          <img id="garen" src="{{ asset('images/garen.png') }}" alt="garen">
           <h2>The might of demacia</h2>
           <h1>garen</h1>
         </div>
@@ -79,8 +53,8 @@
     <div class="exemple">
       <div class="left">
 
-        <img id="inventaire" src="assets/images/inventaire.svg" alt="inventaire">
-        <img id="champion" src="assets/images/champions/akali.png" alt="akali">
+        <img id="inventaire" src="{{ asset('images/inventaire.svg') }}" alt="inventaire">
+        <img id="champion" src="{{ asset('images/champions/akali.png') }}" alt="akali">
         <h2>The rogue assassin</h2>
         <h1>akali</h1>
         <div class="btn">
@@ -90,37 +64,37 @@
         <div class="crow"> </div>
         <div class="roles">
           <div class="role assassins select">
-            <img src="assets/images/assassins.png" alt="assassins">
+            <img src="{{ asset('images/assassins.png') }}" alt="assassins">
             <div class="p">
               <p>assassins</p>
             </div>
           </div>
           <div class="role fighters">
-            <img src="assets/images/fighters.png" alt="fighters">
+            <img src="{{ asset('images/fighters.png') }}" alt="fighters">
             <div class="p">
               <p>fighters</p>
             </div>
           </div>
           <div class="role mages">
-            <img src="assets/images/mages.png" alt="mages">
+            <img src="{{ asset('images/mages.png') }}" alt="mages">
             <div class="p">
               <p>mages</p>
             </div>
           </div>
           <div class="role marksmen">
-            <img src="assets/images/marksmen.png" alt="marksmen">
+            <img src="{{ asset('images/marksmen.png') }}" alt="marksmen">
             <div class="p">
               <p>marksmen</p>
             </div>
           </div>
           <div class="role supports">
-            <img src="assets/images/supports.png" alt="supports">
+            <img src="{{ asset('images/supports.png') }}" alt="supports">
             <div class="p">
               <p>supports</p>
             </div>
           </div>
           <div class="role tanks">
-            <img src="assets/images/tanks.png" alt="tanks">
+            <img src="{{ asset('images/tanks.png') }}" alt="tanks">
             <div class="p">
               <p>tanks</p>
             </div>
@@ -159,15 +133,7 @@
       </div>
     </div>
 
-    <footer>
-      <div class="contents">
-        <p>un fansite fictif réalisé par <a href="https://anne-marie-inthavong.fr/" target="_blank">perroko</a> et <a href="#">crocodail</a></p>
-        <p>sup'internet 2020</p>
-        <p>league of legendS, ses illustrations et son lore sont la propriété de riot games</p>
-        <a href="#"><img src="assets/images/logoRG.png" alt="Riot Game logo"></a>
-      </div>
-
-    </footer>
+    @include('layouts.footer')
 
   </body>
 </html>
