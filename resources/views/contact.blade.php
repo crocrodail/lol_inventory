@@ -36,6 +36,7 @@
 
 
     @include('layouts.footer')
-
+    @include('auth.signIn')
+    @include('auth.logIn')
   </body>
 </html>

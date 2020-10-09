@@ -19,47 +19,49 @@ html, body
 header
   position: relative
   background-color: #111111
-  height: 100px
+  height: 5vw
   color: $gold
   display: flex
   font-family: "Mark Pro Medium", sans-serif
   text-transform: uppercase
+  justify-content: space-between
 
 
   .logoRG
-    width: 400px
+    width: 15vw
     height: 0px
     display: flex
-    padding-top: 25px
+    padding-top: 1vw
     margin-left: 5vw
 
   #riotgame
     padding: 0 0 0 0
-    width: 100px
+    width: 5vw
 
   #iconlol
-    width: 60px
-    height: 65px
-    padding: 0 0 0 30px
-    margin: -7px 0 0 0
+    width: 3.3vw
+    height: 3.3vw
+    padding: 0 0 0 2vw
+    margin: 0 0 0 0
 
   svg
-    margin: 25px 0 0 0
-    width: 50px
+    margin: 1vw 0 0 0
+    width: 3vw
 
   .break
-    height: 47px
-    width: 3px
+    height: 3.5vw
+    width: .2vw
     background-color: #3C3C3C
-    margin: 5px 0 0 0
+    margin: 0vw 0 0 0
 
   .mainMenu
-    margin-top: 45px
-    width: 40vw
+    margin-top: 2.2vw
+    width: 47vw
     display: flex
     overflow-x: hidden
-    margin-left: -100px
-    font-size: 0.8vw
+    margin-left: 0vw
+    font-size: 1vw
+    margin-right: 30vw
 
     a:not(:first-child)
         margin-left: 4vw
@@ -67,7 +69,7 @@ header
   .button
     position:  absolute
     right: 5vw
-    top: 24px
+    top: 1.5vw
 
   #register
     margin-left: 2vw
@@ -104,6 +106,18 @@ header
     margin: 3vw
     border: $gold solid 1.5px
     text-align: center
+    position: relative
+
+    .quite
+      background: url('../images/quite.png')
+      position: absolute
+      height: 2vw
+      width: 2vw
+      right: .5vw
+      top: .5vw
+
+      &:hover
+        cursor: pointer
 
     h2
       font-family: "BeaufortforLOL-Bold"
@@ -150,6 +164,118 @@ header
       color: $gold !important
       border: $gold 1px solid
       margin-bottom: 1vw
+      font-size: 1vw
+      padding-left: 1vw
+      text-align: left
+
+      &::placeholder
+        color: $gold !important
+        text-transform: uppercase
+
+    input:last-child
+      display: block
+      margin: 1.5vw auto 0 auto
+      padding: 1vw 2vw
+      border: none
+      background-color: $redd
+      color: white
+      font-size: 1vw
+      text-transform: uppercase
+      font-family: "Mark Pro Medium", sans-serif
+      font-weight: bold
+
+      &:hover
+        cursor: pointer
+        background-color: $darkredd
+
+.invalid-feedback
+  color: red
+  margin: 0
+  padding: 0
+
+.logIn
+  margin: 0
+  padding: 0
+  position: fixed
+  background-color: rgba(0, 0, 0, 0.7)
+  top: 0
+  width: 100vw
+  height: 100vh
+
+  .popup
+    height: 43vw
+    width: 60vw
+    display: block
+    background-color: #fff
+    margin: auto
+    margin-top: 3vw
+    padding-top: 0.1px
+
+  .border
+    height: 36vw
+    width: 54vw
+    margin: 3vw
+    border: $gold solid 1.5px
+    text-align: center
+    position: relative
+
+    .quite
+      background: url('../images/quite.png')
+      position: absolute
+      height: 2vw
+      width: 2vw
+      right: .5vw
+      top: .5vw
+
+      &:hover
+        cursor: pointer
+
+    h2
+      font-family: "BeaufortforLOL-Bold"
+      text-transform: uppercase
+      margin: 0 0 0 7%
+      font-size: 3.5vw
+      color: $gold
+      letter-spacing: 0.3vw
+
+    h4
+      font-family: "D-DIN Regular"
+      font-size: 2vw
+      font-weight: normal
+      margin: 5% 0 0 7.7%
+      text-transform: uppercase
+      color: $gold
+
+    p
+      font-family: "D-DIN Regular"
+      font-size: 1.5vw
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus
+      -webkit-box-shadow: 0 0 0 30vw #fff inset !important
+      -webkit-text-fill-color: $gold !important
+
+
+
+    input:not(:last-child)
+      position: relative
+      all: unset
+      display: block
+      width: 25vw
+      height: 3.5vw
+      margin: auto
+      font-family: "Mark Pro Medium", sans-serif
+      color: $gold !important
+      border: $gold 1px solid
+      margin-bottom: 2vw
+      margin-top: 3vw
       font-size: 1vw
       padding-left: 1vw
       text-align: left
