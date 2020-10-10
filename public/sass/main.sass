@@ -440,13 +440,32 @@ html, body
     margin: 5%
 
   .content
-    background-image: url('../images/bglol.jpg')
-    background-size: cover
-    background-repeat: no-repeat
+    position: relative
     height: 92%
     margin: 2%
+    overflow: hidden
+
+    video
+      position: absolute
+      z-index: 0
+      height: 100%
+      width: 120%
+      zoom: 1.3
+      top: 0
+      object-fit: cover
+      background-color: rgba(0, 0, 0, 0.5)
+
+    .filtre
+      position: absolute
+      height: 100%
+      width: 120%
+      z-index: 0
+      top: 0
+      object-fit: cover
+      background-color: rgba(0, 0, 0, 0.5)
 
     h1
+      position: relative
       font-family: "BeaufortforLOL-Bold"
       text-transform: uppercase
       font-size: 4.5vw
@@ -457,6 +476,7 @@ html, body
       margin: 0
 
     h2
+      position: relative
       font-family: "D-DIN Regular"
       font-size: 2vw
       font-weight: normal
@@ -468,6 +488,7 @@ html, body
       padding-top: 3vw
 
     .break
+      position: relative
       background-image: url('../images/breakmainscreen.svg')
       background-size: cover
       width: 15vw
@@ -476,6 +497,7 @@ html, body
       margin-top: 2vw
 
     p
+      position: relative
       font-size: 1.5vw
       color: white
       width: 50vw

@@ -115,6 +115,11 @@
     <div class="lol">
       <div class="borderr">
         <div class="content">
+          <video poster="{{ asset('images/bglol.jpg') }}" id="bgvid" playsinline autoplay muted loop>
+            <source src="{{ asset('video/videoplayback.webm') }}" type="video/webm">
+            <source src="{{ asset('video/videoplayback.mp4') }}" type="video/mp4">
+          </video>
+          <div class="filtre"></div>
           <h2>découvrez</h2>
           <h1>league of legends</h1>
           <div class="break"></div>
