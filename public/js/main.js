@@ -3,10 +3,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
   var popup1 = document.querySelector('.signIn');
   var popup2 = document.querySelector('.logIn');
   var popup3 = document.querySelector('.delete');
+  var popup4 = document.querySelector('.selectChamp');
   var inscription = document.querySelector('.button #register');
   var connection = document.querySelector('.button #login');
   var deleteCancel = document.querySelector('#canceldelete');
   var deleteAcount = document.querySelector('#deleteAcount');
+  var addFiche = document.querySelector('#addFiche')
 
   if (closePopup){
     closePopup.forEach((item, i) => {
@@ -14,6 +16,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         if (popup1){ popup1.style.display = "none"; }
         if (popup2){ popup2.style.display = "none"; }
         if (popup3){ popup3.style.display = "none"; }
+        if (popup4){ popup4.style.display = "none"; }
       });
     });
   }
@@ -36,6 +39,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
   if (deleteAcount){
     deleteAcount.addEventListener('click', ev => {
       popup3.style.display = "block";
+    });
+  }
+  if (addFiche){
+    addFiche.addEventListener('click', ev => {
+      popup4.style.display = "block";
     });
   }
 });

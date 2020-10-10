@@ -2,8 +2,6 @@
 <html lang="fr" dir="ltr">
   <head>
     <title>Inventory League of Legends</title>
-    <link href="//db.onlinewebfonts.com/c/a05747eaf46bae50f19dfa950b86befd?family=Mark+Pro+Medium" rel="stylesheet" type="text/css"/>
-    <link href="//db.onlinewebfonts.com/c/12420e8c141ca7c3dff41de2d59df13e?family=BeaufortforLOL-Bold" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="{{ asset('css/main.min.css') }}">
 
     @include('layouts.header')
@@ -54,7 +52,7 @@
       <div class="left">
 
         <img id="inventaire" src="{{ asset('images/inventaire.svg') }}" alt="inventaire">
-        <img id="champion" src="{{ asset('images/champions/akali.png') }}" alt="akali">
+        <img id="champion" src="{{ asset('images/champions/akali/akali.png') }}" alt="akali">
         <h2>The rogue assassin</h2>
         <h1>akali</h1>
         <div class="btn">

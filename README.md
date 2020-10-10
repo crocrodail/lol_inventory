@@ -1,4 +1,4 @@
-<p align="center"><a href="https://lol-inventory.venato.Fr" target="_blank"><img src="https://cdn.discordapp.com/attachments/723972043703320707/763760186308821072/SPOILER_Groupe_3112x.png" width="800"></a></p>
+<p align="center"><a href="https://lol-inventory.venato.Fr" target="_blank"><img src="https://cdn.discordapp.com/attachments/723972043703320707/764311494153338899/Groupe_3212x.jpg" width="800"></a></p>
 
 ## A propos de Lol inventory
 League of Legends - Roleplay Inventory, c'est simplement un petit projet scolaire entre un développeur et une designer.  Mais comme ils aiment bien se compliquer la vie, maintenant ça ressemble à peu près à un vrai site.

@@ -15,7 +15,7 @@ class UserController extends Controller
       return view("profil", ["data" => $playerData, "trackings" => $nbFiche]);
     }
 
-    public function delete()
+    public function delete(Request $request)
     {
       $playerData = DB::table('users')->where('id', Auth::user()->id)->delete();
       return redirect("/logout");

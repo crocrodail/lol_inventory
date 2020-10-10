@@ -2,7 +2,10 @@
 
 namespace Database\Seeders;
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
+use Database\Seeders\champions;
+use Database\Seeders\items;
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,6 +16,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+      champions::run();
+      items::run();
     }
 }

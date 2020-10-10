@@ -2,6 +2,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="{{ asset('css/header_footer.min.css') }}">
+    <link href="//db.onlinewebfonts.com/c/a05747eaf46bae50f19dfa950b86befd?family=Mark+Pro+Medium" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/12420e8c141ca7c3dff41de2d59df13e?family=BeaufortforLOL-Bold" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/116af611cbcd9e4bada60b4e700430c1?family=Avenir+Light" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
   </head>
