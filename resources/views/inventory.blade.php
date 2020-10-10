@@ -141,7 +141,7 @@
     @include('layouts.footer')
     @include('layouts.choseChampion')
     @include('auth.signIn')
-    @include('auth.logIn')
+    @include('auth.login')
 
     <script type="text/javascript">
     $('.dropdown-submenu a.test').on("click", function(e){

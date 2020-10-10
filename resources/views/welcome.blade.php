@@ -133,7 +133,7 @@
 
     @include('layouts.footer')
     @include('auth.signIn')
-    @include('auth.logIn')
+    @include('auth.login')
 
   </body>
 </html>
