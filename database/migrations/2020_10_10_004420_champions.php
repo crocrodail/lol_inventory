@@ -16,6 +16,7 @@ class Champions extends Migration
       Schema::create('champions', function (Blueprint $table) {
           $table->id();
           $table->string('name');
+          $table->longText('description');
       });
     }
 

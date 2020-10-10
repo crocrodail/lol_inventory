@@ -10,15 +10,42 @@
 
     <div class="inventory">
 
-      <img id="hearder" src="{{ asset('images/champions/'.$data[0]->name .'/header.png') }}" alt="header Inventory">
+      @if ( count($data) != 0)
+        <img id="hearder" src="{{ asset('images/champions/'.$data[0]->name.'/header.png') }}" alt="header Inventory">
+      @else
+        <img id="hearder" src="{{ asset('images/champions/akali/header.png') }}" alt="header Inventory">
+      @endif
       <div class="title">
         <h4>Gérez votre</h4>
-        <h2>Inventaire</h2> 
+        <h2>Inventaire</h2>
       </div>
       <div class="fiche">
         {{-- <img id="cadre" src="{{ asset('images/cadreinv.png') }}" alt="cadre"> --}}
         @if ( count($data) == 0)
           <button type="button" id='addFiche' class="redLol1">+ Ajouter fiche</button>
+        @else
+          {{-- <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a tabindex="-1" href="#">HTML</a></li>
+              <li><a tabindex="-1" href="#">CSS</a></li>
+              <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                  <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                  <li class="dropdown-submenu">
+                    <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">3rd level dropdown</a></li>
+                      <li><a href="#">3rd level dropdown</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div> --}}
         @endif
       </div>
       @if ( count($data) > 0)
@@ -83,14 +110,14 @@
           <h2> <span>23</span>kg</h2>
         </div>
 
-        <div class="champion" style="display: none">
+        <div class="champion" style="display: block">
           <img class="cercle" src="{{ asset('images/circle.svg') }}" alt="akali">
-          <img class="champ" src="{{ asset('images/champions/akali/akali.png') }}" alt="akali">
-          <h2>The rogue assassin</h2>
-          <h1>Akali</h1>
+          <img class="champ" src="{{ asset('images/champions/'.$data[0]->name.'/main.png') }}" alt="akali">
+          <h2>{{$data[0]->description}}</h2>
+          <h1>{{$data[0]->name}}</h1>
         </div>
 
-        <div class="descriptionItem" style="display: block">
+        <div class="descriptionItem" style="display: none">
           <div class="item">
             <img src="{{ asset('images/items/heal.png') }}" alt="item focus">
           </div>
@@ -115,6 +142,14 @@
     @include('layouts.choseChampion')
     @include('auth.signIn')
     @include('auth.logIn')
+
+    <script type="text/javascript">
+    $('.dropdown-submenu a.test').on("click", function(e){
+      $(this).next('ul').toggle();
+      e.stopPropagation();
+      e.preventDefault();
+    });
+    </script>
 
   </body>
 </html>

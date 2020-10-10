@@ -52,9 +52,9 @@
       <div class="left">
 
         <img id="inventaire" src="{{ asset('images/inventaire.svg') }}" alt="inventaire">
-        <img id="champion" src="{{ asset('images/champions/akali/akali.png') }}" alt="akali">
-        <h2>The rogue assassin</h2>
-        <h1>akali</h1>
+        <img id="champion" src="{{ asset('images/champions/akali/main.png') }}" alt="akali">
+        <h2 id="champdescrip">The rogue assassin</h2>
+        <h1 id="namechamp">akali</h1>
         <div class="btn">
           <button type="button" class="redLol">Ajouter un item</button>
           <button type="button" class="goldLol">Remise a zéro</button>
@@ -107,7 +107,7 @@
         <h1>Inventaire</h1>
         <div class="break"></div>
         <p>Choisissez votre classe et créez votre inventaire en quelques clics !</p>
-        <button type="button" id='start' class="redLol">Commencer</button>
+        <a href="/inventaire"><button type="button" id='start' class="redLol">Commencer</button></a>
       </div>
 
     </div>
@@ -122,7 +122,7 @@
           <div class="btn">
             <div class="contentbtn">
               <div class="cadre"></div>
-              <button type="button" class="redLol" id="decouvrir2">Découvrir</button>
+              <a href="https://play.euw.leagueoflegends.com/fr_FR"><button type="button" class="redLol" id="decouvrir2">Découvrir</button></a>
               <div class="onbtnleft"></div>
               <div class="onbtnright"></div>
             </div>

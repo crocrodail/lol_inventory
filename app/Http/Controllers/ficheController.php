@@ -11,7 +11,6 @@ class ficheController extends Controller
   public function get()
   {
     $playerData = DB::table('inventory')
-        ->join('champions', 'inventory.champion', '=', 'champions.id')
         ->where('player', Auth::user()->id)
         ->get()
         ->toArray();
@@ -19,7 +18,7 @@ class ficheController extends Controller
     if (!isset($playerData[0])){
       return view("inventory", ["data" => $playerData]);
     } else {
-      $id = $playerData[0]->id - 1;
+      $id = $playerData[0]->id;
       return redirect("/inventaire/".$id);
     }
   }

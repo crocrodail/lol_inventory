@@ -14,11 +14,11 @@ class champions extends Seeder
      */
     static public function run()
     {
-      DB::table('champions')->insert(['name' => "akali",]);
-      DB::table('champions')->insert(['name' => "yasuo",]);
-      DB::table('champions')->insert(['name' => "lux",]);
-      DB::table('champions')->insert(['name' => "jinx",]);
-      DB::table('champions')->insert(['name' => "thresh",]);
-      DB::table('champions')->insert(['name' => "leona",]);
+      DB::table('champions')->insert(['name' => "akali", 'description' => "the rogue assassin"]);
+      DB::table('champions')->insert(['name' => "yasuo",'description' => "the unforgiven"]);
+      DB::table('champions')->insert(['name' => "lux",'description' => "the lady of luminosity"]);
+      DB::table('champions')->insert(['name' => "jinx",'description' => "the loose cannon"]);
+      DB::table('champions')->insert(['name' => "thresh",'description' => "the chain warden"]);
+      DB::table('champions')->insert(['name' => "leona",'description' => "the radiant dawn"]);
     }
 }

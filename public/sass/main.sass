@@ -111,6 +111,38 @@ html, body
     bottom: 0
     right: 0
     width: 47vw
+    -webkit-animation: rotating 5s linear infinite
+    -moz-animation: rotating 5s linear infinite
+    -ms-animation: rotating 5s linear infinite
+    -o-animation: rotating 5s linear infinite
+    animation: rotating 5s linear infinite
+
+  @-webkit-keyframes rotating
+    from
+      -webkit-transform: rotate(0deg)
+      -o-transform: rotate(0deg)
+      transform: rotate(0deg)
+
+    to
+      -webkit-transform: rotate(360deg)
+      -o-transform: rotate(360deg)
+      transform: rotate(360deg)
+
+  @keyframes rotating
+    from
+      -ms-transform: rotate(0deg)
+      -moz-transform: rotate(0deg)
+      -webkit-transform: rotate(0deg)
+      -o-transform: rotate(0deg)
+      transform: rotate(0deg)
+
+    to
+      -ms-transform: rotate(360deg)
+      -moz-transform: rotate(360deg)
+      -webkit-transform: rotate(360deg)
+      -o-transform: rotate(360deg)
+      transform: rotate(360deg)
+
 
   .left
     h1
@@ -200,6 +232,22 @@ html, body
       width: 30vw
       left: 25%
       top: 3%
+      clip-path: polygon(0% 0%, 200% 0%, 0% 200%)
+      // animation-name: dpMRuZ
+      animation-fill-mode: backwards
+      animation-duration: 1400ms
+      animation-delay: 200ms
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+      animation-iteration-count: infinite
+
+
+    @keyframes dpMRuZ
+      0%
+        clip-path: polygon(200% 0%, 0% 200%, 100% 200%)
+
+      100%
+        clip-path: polygon(0% 0%, 200% 0%, 0% 200%)
+
 
     h1
       position: absolute
