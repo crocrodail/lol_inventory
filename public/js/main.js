@@ -5,19 +5,24 @@ window.addEventListener("DOMContentLoaded", (event) => {
   var popup3 = document.querySelector('.delete');
   var popup4 = document.querySelector('.selectChamp');
   var inscription = document.querySelector('.button #register');
+  var inscription2 = document.querySelector('#registerr');
   var connection = document.querySelector('.button #login');
   var deleteCancel = document.querySelector('#canceldelete');
   var deleteAcount = document.querySelector('#deleteAcount');
   var addFiche = document.querySelector('#addFiche');
   var championimg = document.querySelector('#champion');
-  var assassin = document.querySelector('.roles .assassins')
-  var fighters = document.querySelector('.roles .fighters')
-  var mages = document.querySelector('.roles .mages')
-  var marksmen = document.querySelector('.roles .marksmen')
-  var supports = document.querySelector('.roles .supports')
-  var tanks = document.querySelector('.roles .tanks')
-  var champname = document.querySelector('#namechamp')
-  var champdescrip = document.querySelector('#champdescrip')
+  var assassin = document.querySelector('.roles .assassins');
+  var fighters = document.querySelector('.roles .fighters');
+  var mages = document.querySelector('.roles .mages');
+  var marksmen = document.querySelector('.roles .marksmen');
+  var supports = document.querySelector('.roles .supports');
+  var tanks = document.querySelector('.roles .tanks');
+  var champname = document.querySelector('#namechamp');
+  var champdescrip = document.querySelector('#champdescrip');
+  var addFiche2 = document.querySelector('#creatfiche');
+  var btncheck = document.querySelector('#buttonchec');
+  var checkbox = document.querySelector('#checkbox');
+  var profil = document.querySelector('.redLolll')
 
   if (closePopup){
     closePopup.forEach((item, i) => {
@@ -32,6 +37,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   if (inscription){
     inscription.addEventListener('click', ev => {
+      popup1.style.display = "block";
+    });
+  }
+  if (inscription2){
+    inscription2.addEventListener('click', ev => {
       popup1.style.display = "block";
     });
   }
@@ -55,6 +65,28 @@ window.addEventListener("DOMContentLoaded", (event) => {
       popup4.style.display = "block";
     });
   }
+  if (addFiche2){
+    addFiche2.addEventListener('click', ev => {
+      popup4.style.display = "block";
+      checkbox.checked = false
+    });
+  }
+  if (btncheck){
+    btncheck.addEventListener('click', ev => {
+      console.log(checkbox.checked);
+      if (checkbox.checked){
+        checkbox.checked = false;
+      } else {
+        checkbox.checked = true;
+      }
+    });
+  }
+  if (profil){
+    profil.addEventListener('click', ev => {
+      window.location = '/profil';
+    });
+  }
+
   if (assassin){
     var timing = 8
     var timer = timing;

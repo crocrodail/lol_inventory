@@ -127,7 +127,7 @@
           <div class="btn">
             <div class="contentbtn">
               <div class="cadre"></div>
-              <a href="https://play.euw.leagueoflegends.com/fr_FR"><button type="button" class="redLol" id="decouvrir2">Découvrir</button></a>
+              <a href="https://play.euw.leagueoflegends.com/fr_FR" target="_blank"><button type="button" class="redLol" id="decouvrir2">Découvrir</button></a>
               <div class="onbtnleft"></div>
               <div class="onbtnright"></div>
             </div>

@@ -31,8 +31,19 @@ class ficheController extends Controller
         ->where('inventory.id', $id)
         ->get()
         ->toArray();
-    echo var_dump($playerData);
-    return view("inventory", ["data" => $playerData]);
+    $allInventory = DB::table('inventory')
+        ->select('inventory.id as id', 'name')
+        ->join('champions', 'inventory.champion', '=', 'champions.id')
+        ->where('player', Auth::user()->id)
+        ->get()
+        ->toArray();
+    $contentInventory = DB::table('inventory_content')
+        ->join('items', 'inventory_content.item', '=', 'items.id')
+        ->where('inventory', $id)
+        ->get()
+        ->toArray();
+    echo var_dump($contentInventory);
+    return view("inventory", ["data" => $playerData, "all" => $allInventory, "inventory" => $contentInventory]);
   }
 
   public function create(Request $request)
@@ -44,5 +55,14 @@ class ficheController extends Controller
         'champion' => $champion,
       ]);
     return redirect('/inventaire');
+  }
+
+  public function delete($id)
+  {
+    DB::table('inventory')
+        ->where('player', Auth::user()->id)
+        ->where('inventory.id', $id)
+        ->delete();
+    return redirect("/inventaire");
   }
 }

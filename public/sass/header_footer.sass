@@ -15,6 +15,11 @@ html, body
   margin: 0
   padding: 0
   overflow-x: hidden
+  position: relative
+
+a
+  padding: 0
+  margin: 0
 
 header
   position: relative
@@ -29,33 +34,35 @@ header
 
   .logoRG
     width: 15vw
-    height: 0px
+    height: 5vw
     display: flex
-    padding-top: 1vw
+    padding-top: 1.2vw
     margin-left: 5vw
 
   #riotgame
     padding: 0 0 0 0
+    margin-top: -2.5vw
     width: 5vw
 
   #iconlol
     width: 3.3vw
     height: 3.3vw
     padding: 0 0 0 2vw
-    margin: 0 0 0 0
+    margin: -0.4vw 0 0 0
 
   svg
-    margin: 1vw 0 0 0
-    width: 3vw
+    margin: 1vw 1vw 0 1vw
+    width: 1vw
+    height: 1vw
 
   .break
     height: 3.5vw
     width: .2vw
     background-color: #3C3C3C
-    margin: 0vw 0 0 0
+    margin: -0.4vw 0 0 0
 
   .mainMenu
-    margin-top: 2.2vw
+    margin-top: 2vw
     width: 47vw
     display: flex
     overflow-x: hidden
@@ -68,8 +75,48 @@ header
 
   .button
     position:  absolute
+    right: 0
+    top: 0
+    margin: 0
+    padding: 0
+    width: 25vw
+    height: 5vw
+
+  .redLolll
+    all: unset
+    position: absolute
+    top: 1.1vw
     right: 5vw
-    top: 1.5vw
+    padding: 0.7vw 1vw
+    border: none
+    background-color: $redd
+    color: white
+    font-size: 1vw
+    text-transform: uppercase
+    font-family: "Mark Pro Medium", sans-serif
+    font-weight: bold
+
+    &:hover
+      cursor: pointer
+      background-color: $darkredd
+
+  .goldLollll
+    all: unset
+    position: absolute
+    padding: 0.5vw 1vw
+    top: 1vw
+    border: .3vw $gold solid
+    background-color: rgba(155, 176, 110, 0)
+    color: $gold
+    font-size: 1vw
+    text-transform: uppercase
+    font-family: "Mark Pro Medium", sans-serif
+    font-weight: bold
+
+    &:hover
+      cursor: pointer
+      color: $darkgold
+      border: .3vw $darkgold solid
 
   #register
     margin-left: 2vw
@@ -115,6 +162,8 @@ header
       width: 2vw
       right: .5vw
       top: .5vw
+      background-size: contain
+      background-repeat: no-repeat
 
       &:hover
         cursor: pointer

@@ -27,6 +27,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::group(['middleware' => 'auth'], function () {
   Route::get('/inventaire', [App\Http\Controllers\ficheController::class, 'get'])->name('inventaire');
   Route::get('/inventaire/{id}', [App\Http\Controllers\ficheController::class, 'focus'])->name('inventairefocus');
+  Route::get('/inventaire/delete/{id}', [App\Http\Controllers\ficheController::class, 'delete'])->name('inventairedelete');
   Route::post('/createFiche', [App\Http\Controllers\ficheController::class, 'create'])->name('inventairecreate');
   Route::get('/profil', [App\Http\Controllers\UserController::class, 'get'])->name('profil');
   Route::get('/delete', [App\Http\Controllers\UserController::class, 'delete'])->name('delete');

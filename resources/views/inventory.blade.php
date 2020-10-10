@@ -24,28 +24,25 @@
         @if ( count($data) == 0)
           <button type="button" id='addFiche' class="redLol1">+ Ajouter fiche</button>
         @else
-          {{-- <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
-            <span class="caret"></span></button>
+          <div class="dropdown">
+            <button id="buttonchec" class="" type="button">Fiche {{$data[0]->name}}</button>
+            <input id="checkbox" type="checkbox" style="display: none">
             <ul class="dropdown-menu">
-              <li><a tabindex="-1" href="#">HTML</a></li>
-              <li><a tabindex="-1" href="#">CSS</a></li>
-              <li class="dropdown-submenu">
-                <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
-                  <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
-                  <li class="dropdown-submenu">
-                    <a class="test" href="#">Another dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">3rd level dropdown</a></li>
-                      <li><a href="#">3rd level dropdown</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
+
+              @foreach ($all as $key => $value)
+                <li class="dropdown-submenu">
+                  <a href="/inventaire/{{$value->id}}">Fiche {{$value->name}}</a>
+                  <ul class="dropdown-menu">
+                    <a href="/inventaire/{{$value->id}}"><li>Accèder</li></a>
+                    <div class="br"></div>
+                    <a href="/inventaire/delete/{{$value->id}}"><li>Supprimer</li></a>
+                  </ul>
+                </li>
+              @endforeach
+
+              <li id="creatfiche">+ Ajouter fiche</li>
             </ul>
-          </div> --}}
+          </div>
         @endif
       </div>
       @if ( count($data) > 0)
@@ -53,35 +50,22 @@
           <h4>consommables</h4>
           <div class="break"></div>
           <div class="content">
-            <div class="item">
-              <div class="img">
-                <img id="item" src="{{ asset('images/items/heal.png') }}" alt="potion de vie">
-                <img id="cadre" src="{{ asset('images/cadreItem.png') }}" alt="potion de vie">
-                <div class="qty">
-                  <p>001</p>
-                </div>
-              </div>
-            </div>
 
-            <div class="item">
-              <div class="img">
-                <img id="item" src="{{ asset('images/items/heal.png') }}" alt="potion de vie">
-                <img id="cadre" src="{{ asset('images/cadreItem.png') }}" alt="potion de vie">
-                <div class="qty">
-                  <p>001</p>
+            @foreach ($inventory as $key => $value)
+              @if ($value->type == 0)
+                <div class="item" id="item-{{ $value->id }}">
+                  <div class="img">
+                    <img id="item" src="{{ $value->url }}" alt="{{ $value->name }}">
+                    <img id="cadre" src="{{ asset('images/cadreItem.png') }}" alt="cadre de l'items">
+                    <div class="qty">
+                      <p>00{{ $value->qty }}</p>
+                    </div>
+                  </div>
+                  <div id="data-name" style="display: none">{{ $value->name }}</div>
+                  <div id="data-description" style="display: none">{{ $value->description }}</div>
                 </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="img">
-                <img id="item" src="{{ asset('images/items/heal.png') }}" alt="potion de vie">
-                <img id="cadre" src="{{ asset('images/cadreItem.png') }}" alt="potion de vie">
-                <div class="qty">
-                  <p>001</p>
-                </div>
-              </div>
-            </div>
+              @endif
+            @endforeach
 
           </div>
         </div>
@@ -89,15 +73,23 @@
           <h4>totems</h4>
           <div class="break"></div>
           <div class="content">
-            <div class="item">
-              <div class="img">
-                <img id="item" src="{{ asset('images/items/heal.png') }}" alt="potion de vie">
-                <img id="cadre" src="{{ asset('images/cadreItem.png') }}" alt="potion de vie">
-                <div class="qty">
-                  <p>001</p>
+
+            @foreach ($inventory as $key => $value)
+              @if ($value->type == 1)
+                <div class="item" id="item-{{ $value->id }}">
+                  <div class="img">
+                    <img id="item" src="{{ $value->url }}" alt="{{ $value->name }}">
+                    <img id="cadre" src="{{ asset('images/cadreItem.png') }}" alt="cadre de l'items">
+                    <div class="qty">
+                      <p>00{{ $value->qty }}</p>
+                    </div>
+                  </div>
+                  <div id="data-name" style="display: none">{{ $value->name }}</div>
+                  <div id="data-description" style="display: none">{{ $value->description }}</div>
                 </div>
-              </div>
-            </div>
+              @endif
+            @endforeach
+
           </div>
         </div>
 
@@ -142,14 +134,6 @@
     @include('layouts.choseChampion')
     @include('auth.signIn')
     @include('auth.login')
-
-    <script type="text/javascript">
-    $('.dropdown-submenu a.test').on("click", function(e){
-      $(this).next('ul').toggle();
-      e.stopPropagation();
-      e.preventDefault();
-    });
-    </script>
 
   </body>
 </html>

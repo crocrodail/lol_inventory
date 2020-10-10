@@ -12,14 +12,14 @@
   <div id="app">
     <header>
       <div class="logoRG">
-        <a href="#"><img id="riotgame" src="{{ asset('images/logoRG.png') }}" alt="Riot Game logo"></a>
+        <img id="riotgame" src="{{ asset('images/riot-games-seeklogo.com.svg') }}" alt="Riot Game logo">
         <svg xmlns="http://www.w3.org/2000/svg" width="10.682" height="8.535" viewBox="0 0 8.682 4.535">
           <g id="noun_Arrow_2094736" transform="translate(-0.001 -75.02)">
             <path id="Tracé_16" data-name="Tracé 16" d="M.079,8.658a.115.115,0,0,0,.068.023A.12.12,0,0,0,.23,8.645L4.472,4.514a.26.26,0,0,0,0-.34L.23.036A.112.112,0,0,0,.078.025.231.231,0,0,0,0,.21V8.475a.229.229,0,0,0,.079.183Z" transform="translate(8.683 75.02) rotate(90)" fill="#7e7e7e"/>
           </g>
         </svg>
         <div class="break"></div>
-        <img id="iconlol" src="{{ asset('images/iconLOL.png') }}" alt="League of legends icon">
+        <img id="iconlol" src="{{ asset('images/lollogoo.svg') }}" alt="League of legends icon">
       </div>
       <div class="mainMenu">
         <a href="{{ route('welcome') }}">Accueil</a>
@@ -43,12 +43,12 @@
       @endif --}}
       @auth
         <div class="button">
-          <a href="{{ route('profil') }}"><button type="button" class="redLol">Mon profil</button></a>
+          <button type="button" class="redLolll">Mon profil</button>
         </div>
       @else
         <div class="button">
-          <button type="button" class="goldLol" id="login">Connexion</button>
-          <button type="button" class="redLol" id="register">Inscription</button>
+          <button type="button" class="goldLollll" id="login">Connexion</button>
+          <button type="button" class="redLolll" id="register">Inscription</button>
         </div>
       @endif
     </header>
