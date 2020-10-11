@@ -28,7 +28,7 @@
             <h1>crocrodail</h1>
             <div class="breakCrocrodail"></div>
           </div>
-          <p>En première année à SUP'Internet, <a href="https://github.com/crocrodail">Crocodail</a> est un passionné de développement, de JDR et d'Ariel la petite sirène. C'est lui l'instigateur du concept du "Roleplay Inventory".</p>
+          <p>En deuxième année à SUP'Internet, <a href="https://github.com/crocrodail">Crocodail</a> est un passionné de développement, de JDR et d'Ariel la petite sirène. C'est lui l'instigateur du concept du "Roleplay Inventory".</p>
           <div class="contentbtn">
             <div class="cadre"></div>
             <a href="https://github.com/crocrodail" target="_blank"><button type="button" class="redLol contacter2">contacter</button><a>
@@ -42,7 +42,7 @@
             <h1>perroko</h1>
             <div class="breakPerroko"></div>
           </div>
-          <p>En première année à SUP'Internet également, <a href="https://anne-marie-inthavong.fr/" target="_blank">Perroko</a> est une UI/UX designer fan d'oiseaux et de choses mignonnes. Elle s'occupe de toute la partie visuelle du site et de la rédaction.</p>
+          <p>En deuxième année à SUP'Internet également, <a href="https://anne-marie-inthavong.fr/" target="_blank">Perroko</a> est une UI/UX designer fan d'oiseaux et de choses mignonnes. Elle s'occupe de toute la partie visuelle du site et de la rédaction.</p>
           <div class="contentbtn">
             <div class="cadre"></div>
             <a href="https://anne-marie-inthavong.fr/" target="_blank"><button type="button" class="redLol contacter2">contacter</button></a>
