@@ -14,7 +14,6 @@ class ficheController extends Controller
         ->where('player', Auth::user()->id)
         ->get()
         ->toArray();
-    echo var_dump($playerData);
     if (!isset($playerData[0])){
       return view("inventory", ["data" => $playerData]);
     } else {
@@ -42,7 +41,6 @@ class ficheController extends Controller
         ->where('inventory', $id)
         ->get()
         ->toArray();
-    echo var_dump($contentInventory);
     return view("inventory", ["data" => $playerData, "all" => $allInventory, "inventory" => $contentInventory]);
   }
 
