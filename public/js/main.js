@@ -22,7 +22,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   var addFiche2 = document.querySelector('#creatfiche');
   var btncheck = document.querySelector('#buttonchec');
   var checkbox = document.querySelector('#checkbox');
-  var profil = document.querySelector('.redLolll')
+  var profil = document.querySelector('#profilacxc')
 
   if (closePopup){
     closePopup.forEach((item, i) => {

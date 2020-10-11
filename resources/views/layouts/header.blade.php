@@ -30,7 +30,7 @@
 
       @auth
         <div class="button">
-          <button type="button" class="redLolll">Mon profil</button>
+          <button type="button" id="profilacxc" class="redLolll">Mon profil</button>
         </div>
       @else
         <div class="button">
