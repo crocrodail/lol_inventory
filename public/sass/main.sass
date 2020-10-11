@@ -165,16 +165,16 @@ html, body
       margin-left: 8%
       margin-top: 2%
 
-      &::before
-        position: absolute
-        content: ''
-        background-image: url('../images/btnspe.svg')
-        background-size: cover
-        background-repeat: no-repeat
-        width: 15vw
-        height: 3.26vw
-        left: -3%
-        top: -12.5%
+    .cadre
+      position: absolute
+      pointer-events: none
+      background-image: url('../images/btnspe.svg')
+      background-size: cover
+      background-repeat: no-repeat
+      width: 15vw
+      height: 3.26vw
+      left: 6.8vw
+      top: 37vw
 
   .right
     h1
@@ -420,16 +420,17 @@ html, body
       right: 23%
       top: 55%
 
-      &::before
-        position: absolute
-        content: ''
-        background-image: url('../images/btnspe.svg')
-        background-size: cover
-        background-repeat: no-repeat
-        width: 16vw
-        height: 3.49vw
-        left: -2%
-        top: -18%
+    .cadre
+      position: absolute
+      content: ''
+      background-image: url('../images/btnspe.svg')
+      background-size: cover
+      background-repeat: no-repeat
+      width: 16vw
+      height: 3.49vw
+      right: 22.7%
+      top: 54.2%
+      pointer-events: none
 
 .lol
   height: 52vw
@@ -557,10 +558,26 @@ html, body
   text-transform: uppercase
   font-family: "Mark Pro Medium", sans-serif
   font-weight: bold
+  position: relative
+  overflow: hidden
+  &:after
+    background: #fff
+    content: ""
+    height: 155px
+    left: -75px
+    opacity: .2
+    position: absolute
+    top: -50px
+    transform: rotate(35deg)
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1)
+    width: 50px
+    z-index: 1
 
   &:hover
     cursor: pointer
-    background-color: $darkredd
+  &:hover:after
+    left: 120%
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1)
 
 .goldLol
   padding: 0.5vw 1vw

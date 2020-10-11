@@ -38,6 +38,7 @@
             Inscrivez-vous dès à présent afin de commencer à créer !
           </p>
           <button type="button" id='registerr' class="redLol">S'inscrire</button>
+          <div class="cadre"></div>
         </div>
         <div class="right">
           <img id="circleG" src="{{ asset('images/circle.svg') }}" alt="circle">
@@ -108,6 +109,7 @@
         <div class="break"></div>
         <p>Choisissez votre classe et créez votre inventaire en quelques clics !</p>
         <a href="/inventaire"><button type="button" id='start' class="redLol">Commencer</button></a>
+        <div class="cadre"></div>
       </div>
 
     </div>

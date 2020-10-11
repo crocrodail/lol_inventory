@@ -278,10 +278,26 @@ html, body
   text-transform: uppercase
   font-family: "Mark Pro Medium", sans-serif
   font-weight: bold
+  position: relative
+  overflow: hidden
+  &:after
+    background: #fff
+    content: ""
+    height: 155px
+    left: -75px
+    opacity: .2
+    position: absolute
+    top: -50px
+    transform: rotate(35deg)
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1)
+    width: 50px
+    z-index: 1
 
   &:hover
     cursor: pointer
-    background-color: $darkredd
+  &:hover:after
+    left: 120%
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1)
 
 .goldLol
   padding: 0.5vw 1vw

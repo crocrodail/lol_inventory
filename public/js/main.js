@@ -92,59 +92,59 @@ window.addEventListener("DOMContentLoaded", (event) => {
     var timer = timing;
     var last = 'akali';
     assassin.addEventListener('click', ev => {
-      akali()
+      akali();
     });
     fighters.addEventListener('click', ev => {
-      yasuo()
+      yasuo();
     });
     mages.addEventListener('click', ev => {
-      lux()
+      lux();
     });
     marksmen.addEventListener('click', ev => {
-      jinx()
+      jinx();
     });
     supports.addEventListener('click', ev => {
-      thresh()
+      thresh();
     });
     tanks.addEventListener('click', ev => {
-      leona()
+      leona();
     });
 
     function boucle(){
       if (timer == 0){
         switch (last) {
           case 'akali':
-            yasuo()
-            last = "yasuo"
+            yasuo();
+            last = "yasuo";
             break;
           case 'yasuo':
-            lux()
-            last = "lux"
+            lux();
+            last = "lux";
             break;
           case 'lux':
-            jinx()
-            last = "jinx"
+            jinx();
+            last = "jinx";
             break;
           case 'jinx':
-            thresh()
-            last = "thresh"
+            thresh();
+            last = "thresh";
             break;
           case 'thresh':
-            leona()
-            last = "leona"
+            leona();
+            last = "leona";
             break;
           case 'leona':
-            akali()
-            last = "akali"
+            akali();
+            last = "akali";
             break;
         }
       }
-      timer--
+      timer--;
       setTimeout(function () {
-        boucle()
+        boucle();
       }, 1000);
     }
-    boucle()
+    boucle();
 
     function akali(){
       timer = timing
